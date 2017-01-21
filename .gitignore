@@ -1,0 +1,11 @@
+/composer.phar
+/.c9/
+/.git/
+/web/bundles/
+/vendor/
+/build/
+/bin/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/logs/*
+/app/config/parameters.yml

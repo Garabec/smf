@@ -1,0 +1,8 @@
+core_homepage:
+    path:   /
+    defaults: { __controller:CoreBundle:Post:index }
+    
+ 
+ 
+    
+

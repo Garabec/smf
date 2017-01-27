@@ -1,13 +1,17 @@
 
-model:
-    resource: "@ModelBundle/Controller/"
-    type:     annotation
-    prefix:   /
+# model:
+#     resource: "@ModelBundle/Controller/"
+#     type:     annotation
+#     prefix:   /
 
 core:
-    resource: "@CoreBundle/Controller/"
+    resource: "@CoreBundle/Controller/PostController::indexAction"
     type:     annotation
     prefix:   /
+ 
+# core:
+#     resource: "@CoreBundle/Resources/config/routing.yml"
+#     prefix:   /
     
 app:
     resource: "@AppBundle/Controller/"

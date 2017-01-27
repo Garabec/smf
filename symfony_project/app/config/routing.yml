@@ -5,7 +5,7 @@
 #     prefix:   /
 
 core:
-    resource: "@CoreBundle/Controller/PostController::indexAction"
+    resource: "@CoreBundle/Controller/"
     type:     annotation
     prefix:   /
  
@@ -13,6 +13,6 @@ core:
 #     resource: "@CoreBundle/Resources/config/routing.yml"
 #     prefix:   /
     
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+# app:
+#     resource: "@AppBundle/Controller/"
+#     type:     annotation

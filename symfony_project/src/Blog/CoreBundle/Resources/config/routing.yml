@@ -1,6 +1,6 @@
 core_homepage:
     path:   /
-    defaults: { __controller:CoreBundle:Post:index }
+    defaults: { _controller:CoreBundle:Post:index }
     
  
  

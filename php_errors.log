@@ -1,0 +1,246 @@
+[22-Jan-2017 20:09:14 UTC] PHP Fatal error:  Class 'Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle' not found in /home/ubuntu/workspace/symfony_project/app/AppKernel.php on line 16
+[22-Jan-2017 20:09:14 UTC] PHP Stack trace:
+[22-Jan-2017 20:09:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[22-Jan-2017 20:09:14 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[22-Jan-2017 20:09:14 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[22-Jan-2017 20:09:14 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:68
+[22-Jan-2017 20:09:14 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:113
+[22-Jan-2017 20:09:14 UTC] PHP   6. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:403
+[24-Jan-2017 19:13:12 UTC] PHP Fatal error:  Declaration of Blog\ModelBundle\DataFixtures\ORM\Post::load() must be compatible with Doctrine\Common\DataFixtures\FixtureInterface::load(Doctrine\Common\Persistence\ObjectManager $manager) in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Post.php on line 10
+[24-Jan-2017 19:13:12 UTC] PHP Stack trace:
+[24-Jan-2017 19:13:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 19:13:12 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 19:13:12 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 19:13:12 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 19:13:12 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 19:13:12 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 19:13:12 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 19:13:12 UTC] PHP   8. Doctrine\Common\DataFixtures\Loader->loadFromDirectory() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:101
+[24-Jan-2017 19:13:12 UTC] PHP   9. Doctrine\Common\DataFixtures\Loader->loadFromIterator() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:82
+[24-Jan-2017 19:13:12 UTC] PHP  10. require_once() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:347
+[24-Jan-2017 19:14:29 UTC] PHP Fatal error:  Call to undefined method Blog\ModelBundle\DataFixtures\ORM\Post::setTitle() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Post.php on line 22
+[24-Jan-2017 19:14:29 UTC] PHP Stack trace:
+[24-Jan-2017 19:14:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 19:14:29 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 19:14:29 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 19:14:29 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 19:14:29 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 19:14:29 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 19:14:29 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 19:14:29 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 19:14:29 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 19:14:29 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 19:14:29 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 19:14:29 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 19:14:29 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 19:14:29 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Post->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 19:16:10 UTC] PHP Fatal error:  Declaration of Blog\ModelBundle\DataFixtures\ORM\Author::load() must be compatible with Doctrine\Common\DataFixtures\FixtureInterface::load(Doctrine\Common\Persistence\ObjectManager $manager) in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 10
+[24-Jan-2017 19:16:10 UTC] PHP Stack trace:
+[24-Jan-2017 19:16:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 19:16:10 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 19:16:10 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 19:16:10 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 19:16:10 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 19:16:10 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 19:16:10 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 19:16:10 UTC] PHP   8. Doctrine\Common\DataFixtures\Loader->loadFromDirectory() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:101
+[24-Jan-2017 19:16:10 UTC] PHP   9. Doctrine\Common\DataFixtures\Loader->loadFromIterator() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:82
+[24-Jan-2017 19:16:10 UTC] PHP  10. require_once() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:347
+[24-Jan-2017 19:22:02 UTC] PHP Fatal error:  Declaration of Blog\ModelBundle\DataFixtures\ORM\Author::load() must be compatible with Doctrine\Common\DataFixtures\FixtureInterface::load(Doctrine\Common\Persistence\ObjectManager $manager) in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 10
+[24-Jan-2017 19:22:02 UTC] PHP Stack trace:
+[24-Jan-2017 19:22:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 19:22:02 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 19:22:02 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 19:22:02 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 19:22:02 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 19:22:02 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 19:22:02 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 19:22:02 UTC] PHP   8. Doctrine\Common\DataFixtures\Loader->loadFromDirectory() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:101
+[24-Jan-2017 19:22:02 UTC] PHP   9. Doctrine\Common\DataFixtures\Loader->loadFromIterator() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:82
+[24-Jan-2017 19:22:02 UTC] PHP  10. require_once() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:347
+[24-Jan-2017 21:05:02 UTC] PHP Fatal error:  Declaration of Blog\ModelBundle\DataFixtures\ORM\Author::load() must be compatible with Doctrine\Common\DataFixtures\FixtureInterface::load(Doctrine\Common\Persistence\ObjectManager $manager) in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 10
+[24-Jan-2017 21:05:02 UTC] PHP Stack trace:
+[24-Jan-2017 21:05:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:05:02 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:05:02 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:05:02 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:05:02 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:05:02 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:05:02 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:05:02 UTC] PHP   8. Doctrine\Common\DataFixtures\Loader->loadFromDirectory() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:101
+[24-Jan-2017 21:05:02 UTC] PHP   9. Doctrine\Common\DataFixtures\Loader->loadFromIterator() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:82
+[24-Jan-2017 21:05:02 UTC] PHP  10. require_once() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:347
+[24-Jan-2017 21:05:15 UTC] PHP Fatal error:  Declaration of Blog\ModelBundle\DataFixtures\ORM\Author::load() must be compatible with Doctrine\Common\DataFixtures\FixtureInterface::load(Doctrine\Common\Persistence\ObjectManager $manager) in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 10
+[24-Jan-2017 21:05:15 UTC] PHP Stack trace:
+[24-Jan-2017 21:05:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:05:15 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:05:15 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:05:15 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:05:15 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:05:15 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:05:15 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:05:15 UTC] PHP   8. Doctrine\Common\DataFixtures\Loader->loadFromDirectory() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:101
+[24-Jan-2017 21:05:15 UTC] PHP   9. Doctrine\Common\DataFixtures\Loader->loadFromIterator() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:82
+[24-Jan-2017 21:05:15 UTC] PHP  10. require_once() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Loader.php:347
+[24-Jan-2017 21:18:31 UTC] PHP Fatal error:  Call to undefined method Blog\ModelBundle\DataFixtures\ORM\Author::setName() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 26
+[24-Jan-2017 21:18:31 UTC] PHP Stack trace:
+[24-Jan-2017 21:18:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:18:31 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:18:31 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:18:31 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:18:31 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:18:31 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:18:31 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:18:31 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:18:31 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:18:31 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:18:31 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:18:31 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:18:31 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:18:31 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Author->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:20:48 UTC] PHP Fatal error:  Call to undefined method Blog\ModelBundle\DataFixtures\ORM\Author::setName() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 26
+[24-Jan-2017 21:20:48 UTC] PHP Stack trace:
+[24-Jan-2017 21:20:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:20:48 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:20:48 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:20:48 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:20:48 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:20:48 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:20:48 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:20:48 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:20:48 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:20:48 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:20:48 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:20:48 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:20:48 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:20:48 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Author->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:23:54 UTC] PHP Fatal error:  Call to undefined method Blog\ModelBundle\DataFixtures\ORM\Author::setName() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 26
+[24-Jan-2017 21:23:54 UTC] PHP Stack trace:
+[24-Jan-2017 21:23:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:23:54 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:23:54 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:23:54 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:23:54 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:23:54 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:23:54 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:23:54 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:23:54 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:23:54 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:23:54 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:23:54 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:23:54 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:23:54 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Author->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:26:23 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\DataFixtures\ORM\Blog\ModelBundle\Entity\Author' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Author.php on line 25
+[24-Jan-2017 21:26:23 UTC] PHP Stack trace:
+[24-Jan-2017 21:26:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:26:23 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:26:23 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:26:23 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:26:23 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:26:23 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:26:23 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:26:23 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:26:23 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:26:23 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:26:23 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:26:23 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:26:23 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:26:23 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Author->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:30:42 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\DataFixtures\ORM\Author' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php on line 26
+[24-Jan-2017 21:30:42 UTC] PHP Stack trace:
+[24-Jan-2017 21:30:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:30:42 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:30:42 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:30:42 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:30:42 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:30:42 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:30:42 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:30:42 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:30:42 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:30:42 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:30:42 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:30:42 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:30:42 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:30:42 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Authors->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:31:20 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\DataFixtures\ORM\Author' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php on line 26
+[24-Jan-2017 21:31:20 UTC] PHP Stack trace:
+[24-Jan-2017 21:31:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:31:20 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:31:20 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:31:20 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:31:20 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:31:20 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:31:20 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:31:20 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:31:20 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:31:20 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:31:20 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:31:20 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:31:20 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:31:20 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Authors->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:34:24 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\Entity\ArrayCollection' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/Entity/Author.php on line 48
+[24-Jan-2017 21:34:24 UTC] PHP Stack trace:
+[24-Jan-2017 21:34:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:34:24 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:34:24 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:34:24 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:34:24 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:34:24 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:34:24 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:34:24 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:34:24 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:34:24 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:34:24 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:34:24 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:34:24 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:34:24 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Authors->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:34:24 UTC] PHP  15. Blog\ModelBundle\Entity\Author->__construct() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php:27
+[24-Jan-2017 21:42:06 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\DataFixtures\ORM\Post' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php on line 24
+[24-Jan-2017 21:42:06 UTC] PHP Stack trace:
+[24-Jan-2017 21:42:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:42:06 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:42:06 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:42:06 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:42:06 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:42:06 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:42:06 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:42:06 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:42:06 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:42:06 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:42:06 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:42:06 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:42:06 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:42:06 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Posts->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:43:11 UTC] PHP Fatal error:  Class 'Blog\ModelBundle\DataFixtures\ORM\Post' not found in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php on line 24
+[24-Jan-2017 21:43:11 UTC] PHP Stack trace:
+[24-Jan-2017 21:43:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:43:11 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:43:11 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:43:11 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:43:11 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:43:11 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:43:11 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:43:11 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:43:11 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:43:11 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:43:11 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:43:11 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:43:11 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:43:11 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Posts->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:45:15 UTC] PHP Fatal error:  Call to undefined method Doctrine\ORM\EntityManager::getRepasitory() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php on line 54
+[24-Jan-2017 21:45:15 UTC] PHP Stack trace:
+[24-Jan-2017 21:45:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[24-Jan-2017 21:45:15 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[24-Jan-2017 21:45:15 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[24-Jan-2017 21:45:15 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[24-Jan-2017 21:45:15 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[24-Jan-2017 21:45:15 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[24-Jan-2017 21:45:15 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[24-Jan-2017 21:45:15 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[24-Jan-2017 21:45:15 UTC] PHP   9. DoctrineORMEntityManager_0000000031dc3484000000006a20c172b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[24-Jan-2017 21:45:15 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4431
+[24-Jan-2017 21:45:15 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:45:15 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[24-Jan-2017 21:45:15 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[24-Jan-2017 21:45:15 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Posts->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[24-Jan-2017 21:45:15 UTC] PHP  15. Blog\ModelBundle\DataFixtures\ORM\Posts->getAuthor() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php:28

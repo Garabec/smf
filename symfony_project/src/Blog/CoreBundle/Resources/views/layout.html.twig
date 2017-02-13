@@ -2,6 +2,37 @@
 
 {% block stylesheets %}
 
-<link rel="stylesheet" type="text/css" href={{ asset('bundles/core/css/main.css') }} >
+<link rel="stylesheet" type="text/css" href={{ asset('bundles/core/css/bootstrap.css') }} >
+<link rel="stylesheet" type="text/css" href={{ asset('bundles/core/css/bootstrap-theme.css') }} >
+
+
+{% endblock %}
+
+{% block title %}CoreBundle:Post:index{% endblock %}
+
+{% block body %}
+
+
+<nav class="navbar navbar-inverse">
+<a href="#"><h1>Symfony 3 Blog</h1></a>
+<button type="button" class="btn btn-primary">Home</button>
+
+</nav>
+
+{% block content %}
+{% endblock %}
+
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascripts %}
+
+<script src="{{ asset('bundles/core/js/bootstrap.js') }}"></script>
 
 {% endblock %}

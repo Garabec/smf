@@ -244,3 +244,25 @@
 [24-Jan-2017 21:45:15 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
 [24-Jan-2017 21:45:15 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Posts->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
 [24-Jan-2017 21:45:15 UTC] PHP  15. Blog\ModelBundle\DataFixtures\ORM\Posts->getAuthor() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php:28
+[12-Feb-2017 21:12:26 UTC] PHP Fatal error:  Call to undefined function Blog\CoreBundle\Controller\getDoctrine() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 19
+[12-Feb-2017 21:12:26 UTC] PHP Stack trace:
+[12-Feb-2017 21:12:26 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/phpunit/phpunit/phpunit:0
+[12-Feb-2017 21:12:26 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/.composer/vendor/phpunit/phpunit/phpunit:52
+[12-Feb-2017 21:12:26 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+[12-Feb-2017 21:12:26 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:149
+[12-Feb-2017 21:12:26 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:440
+[12-Feb-2017 21:12:26 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php:722
+[12-Feb-2017 21:12:26 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php:722
+[12-Feb-2017 21:12:26 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:724
+[12-Feb-2017 21:12:26 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestResult.php:612
+[12-Feb-2017 21:12:26 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:768
+[12-Feb-2017 21:12:26 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:909
+[12-Feb-2017 21:12:26 UTC] PHP  12. Blog\CoreBundle\Tests\Controller\PostControllerTest->testIndex() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:909
+[12-Feb-2017 21:12:26 UTC] PHP  13. Symfony\Component\BrowserKit\Client->request() /home/ubuntu/workspace/symfony_project/tests/CoreBundle/Controller/PostControllerTest.php:22
+[12-Feb-2017 21:12:26 UTC] PHP  14. Symfony\Bundle\FrameworkBundle\Client->doRequest() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php:315
+[12-Feb-2017 21:12:26 UTC] PHP  15. Symfony\Component\HttpKernel\Client->doRequest() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Client.php:131
+[12-Feb-2017 21:12:26 UTC] PHP  16. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php:79
+[12-Feb-2017 21:12:26 UTC] PHP  17. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[12-Feb-2017 21:12:26 UTC] PHP  18. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:68
+[12-Feb-2017 21:12:26 UTC] PHP  19. call_user_func_array:{/home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153}() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153
+[12-Feb-2017 21:12:26 UTC] PHP  20. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153

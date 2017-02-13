@@ -1,20 +1,17 @@
 <?php
 
-namespace Blog\ModelBundle\Entity;
+namespace Blog\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Post
  *
- * @ORM\Table(name="post")
- * @ORM\Entity(repositoryClass="Blog\ModelBundle\Repository\PostRepository")
+ * @ORM\Table(name="post_blog")
+ * @ORM\Entity(repositoryClass="Blog\CoreBundle\Repository\PostRepository")
  */
- 
-class Post extends Timestampable
+class Post
 {
-
     /**
      * @var int
      *
@@ -37,20 +34,6 @@ class Post extends Timestampable
      * @ORM\Column(name="body", type="string", length=255)
      */
     private $body;
-
-    
-    /**
-     * @var Author
-     *
-     * @ORM\ManyToOne(targetEntity="Author", inversedBy="posts")
-     * $ORM\JoinColumn(name="author_id",referencedColumnName="id",nulleble=false)
-     * @Assert\NotBlank()
-     */
-    private $author;
-   
-    
-
-
     /**
      * Get id
      *
@@ -107,31 +90,5 @@ class Post extends Timestampable
     public function getBody()
     {
         return $this->body;
-    }
-
-    
-
-    /**
-     * Set author
-     *
-     * @param \Blog\ModelBundle\Entity\Author $author
-     *
-     * @return Post
-     */
-    public function setAuthor(Author $author )
-    {
-        $this->author = $author;
-
-        return $this;
-    }
-
-    /**
-     * Get author
-     *
-     * @return \Blog\ModelBundle\Entity\Author
-     */
-    public function getAuthor()
-    {
-        return $this->author;
     }
 }

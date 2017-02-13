@@ -11,11 +11,11 @@ class PostControllerTest extends WebTestCase
     /**
      * test post index
      * 
-     **/
+     *
+     */
      
     
-    
-    public function testIndex()
+     public function testIndex()
     {
         $client = static::createClient();
 

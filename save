@@ -1,0 +1,32 @@
+{% for post in posts %}
+
+
+{{ include ('CoreBundle:Post:_post.html.twig', {post: post}) }}
+
+
+{% endfor %}
+
+
+
+
+<article>
+    
+    <header>
+        
+        
+       <h2> <a  href="#">{{ post.title }}</a> </h2> 
+        
+        
+    </header>
+    
+    <p> <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
+        <a  href="#">{{ post.author }}      </a>
+    </p>
+
+
+    <p>
+        
+     {{ post.body }}   
+        
+    </p>
+</article>

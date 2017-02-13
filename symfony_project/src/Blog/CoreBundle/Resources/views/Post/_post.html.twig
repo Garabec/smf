@@ -1,21 +1,24 @@
 <article>
     
-    <header>
+              <header>
         
         
-       <h2> <a  href="#">{{ post.title }}</a> </h2> 
+                  <h2> <a  href="#">{{ post.title }}</a> </h2> 
         
         
-    </header>
+              </header>
     
-    <p> <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
-        <a  href="#">{{ post.author.getName() }}      </a>
-    </p>
+            <p> <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
+            <a  href="#">{{ post.author.getName() }}      </a>
+            </p>
 
 
-    <p>
+                   <p>
         
-     {{ post.body }}   
+                           {{ post.body }}   
         
-    </p>
+                   </p>
 </article>
+  
+        
+

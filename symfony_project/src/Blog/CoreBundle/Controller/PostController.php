@@ -18,12 +18,13 @@ class PostController extends Controller
         
         $posts=$this->getDoctrine()->getRepository('ModelBundle:Post')->findAll();
         
-        
+        $post_latest=$this->getDoctrine()->getRepository('ModelBundle:Post')->getLatest(3);
         
         return  array(
             
-           'posts'=>$posts
+            'posts'=>$posts,
             
+            'post_latest'=>$post_latest
             
             );
         

@@ -10,4 +10,40 @@ namespace Blog\ModelBundle\Repository;
  */
 class PostRepository extends \Doctrine\ORM\EntityRepository
 {
+    
+    public function getLatest($num)
+    {
+        
+        
+     $db=$this->getQueryBuilder()->orderBy('p.createdAt','desc')->setMaxResults($num);
+              
+              
+              
+              
+     return $db->getQuery()->getResult();   
+        
+        
+    }
+    
+    
+    private function getQueryBuilder(){
+        
+        
+      $rm=$this->getEntityManager();
+      
+      dump($rm);
+      
+      
+      $db=$rm->getRepository('ModelBundle:Post')->createQueryBuilder('p');
+      
+                                               
+      //
+        
+      return $db;  
+        
+    }
+    
+    
+    
+    
 }

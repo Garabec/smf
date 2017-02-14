@@ -27,13 +27,15 @@
 
   <div class="col-md-4 bg-success ">
       
-      <h2>Latest Post</h2>
       
-  {% block sidebar %}    
+      
+  {% block sidebar %} 
+  
+   <h2>Latest Post</h2>
      
      {% for post in post_latest %}
      
-     <p><a href="#">{{post.title}}</a></p>
+     <p><a href="{{post.slug}}">{{post.title}}</a></p>
      
      
      {% endfor %} 

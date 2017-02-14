@@ -1,0 +1,54 @@
+{% extends "CoreBundle::layout.html.twig" %}
+
+
+
+{% block content %}
+
+<div class="row">
+    
+                 <div class="col-md-8">
+                     
+                     {% block section %} 
+                     
+                     <article>
+    
+                         <header>
+        
+        
+                            <h2> <a  href="#">{{ post.title }}</a> </h2> 
+        
+        
+                        </header>
+    
+                            <p> <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
+                            
+                            </p>
+
+
+                   <p>
+        
+                           {{ post.body }}   
+        
+                   </p>
+                   </article>
+  
+                     {% endblock %}
+
+                 </div>
+
+                 <div class="col-md-4 bg-success ">
+      
+                   {% block sidebar %} 
+                   
+                   <h2>Author</h2>
+                   <a  href="#">{{ post.author.getName() }}      </a>
+                   
+  
+                   {% endblock %}
+                 </div>
+
+
+</div>
+
+
+{% endblock %}

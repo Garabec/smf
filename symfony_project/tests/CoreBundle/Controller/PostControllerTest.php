@@ -23,6 +23,27 @@ class PostControllerTest extends WebTestCase
         
         $this->assertTrue($client->getResponse()->isSuccessful(),"The response not susseful");
         
+        $this->assertCount(3,$crawler->filter('h2'),"There are should be 3 displayed ports");
+        
     }
+
+   
+   
+   
+    public function showIndex()
+    {
+        $client = static::createClient();
+        
+        $post=$client->getContainer()->get('doctrine')->getRepository('ModelBundle:Post')->findFirst();
+
+        $crawler = $client->request('GET', '/',$post->getSlug());
+        
+        $this->assertTrue($client->getResponse()->isSuccessful(),"The response not susseful");
+        
+        $this->assertEquals($post->getTitle(),$crawler->filter('h1')->text(),"Post title is invalid");
+        
+    }
+
+
 
 }

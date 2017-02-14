@@ -11,6 +11,15 @@ namespace Blog\ModelBundle\Repository;
 class PostRepository extends \Doctrine\ORM\EntityRepository
 {
     
+    /**
+     * @param int $num
+     * 
+     * 
+     * @return array()
+     **/
+    
+    
+    
     public function getLatest($num)
     {
         
@@ -43,7 +52,24 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
         
     }
     
-    
-    
+    /**
+     * 
+     *return first post 
+     * 
+     * @return Post
+     **/
+    public function findFirst()
+    {
+        
+        
+     $db=$this->getQueryBuilder()->orderBy('p.id','asc')->setMaxResults(1);
+              
+              
+              
+              
+     return $db->getQuery()->getSingleResult();   
+        
+        
+    }
     
 }

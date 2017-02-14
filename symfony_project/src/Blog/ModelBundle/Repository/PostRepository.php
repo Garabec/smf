@@ -37,7 +37,7 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
       $db=$rm->getRepository('ModelBundle:Post')->createQueryBuilder('p');
       
                                                
-      //
+      
         
       return $db;  
         

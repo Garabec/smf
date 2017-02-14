@@ -368,3 +368,13 @@
 [13-Feb-2017 19:31:56 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
 [13-Feb-2017 19:31:56 UTC] PHP   7. Blog\ModelBundle\Repository\PostRepository->getLatest() /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php:21
 [13-Feb-2017 19:31:56 UTC] PHP   8. Blog\ModelBundle\Repository\PostRepository->getQueryBuilder() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/Repository/PostRepository.php:18
+[14-Feb-2017 09:33:24 UTC] PHP Fatal error:  Call to undefined function Blog\ModelBundle\Repository\dump() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/Repository/PostRepository.php on line 34
+[14-Feb-2017 09:33:24 UTC] PHP Stack trace:
+[14-Feb-2017 09:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app.php:0
+[14-Feb-2017 09:33:24 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_project/web/app.php:16
+[14-Feb-2017 09:33:24 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[14-Feb-2017 09:33:24 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4599
+[14-Feb-2017 09:33:24 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4644}() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4644
+[14-Feb-2017 09:33:24 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4644
+[14-Feb-2017 09:33:24 UTC] PHP   7. Blog\ModelBundle\Repository\PostRepository->getLatest() /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php:21
+[14-Feb-2017 09:33:24 UTC] PHP   8. Blog\ModelBundle\Repository\PostRepository->getQueryBuilder() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/Repository/PostRepository.php:18

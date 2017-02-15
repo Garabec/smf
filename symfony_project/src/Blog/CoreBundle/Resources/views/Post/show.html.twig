@@ -15,7 +15,7 @@
                          <header>
         
         
-                            <h2> <a  href="#">{{ post.title }}</a> </h2> 
+                            <h2><a  href="#">{{post.title}}</a></h2> 
         
         
                         </header>
@@ -41,8 +41,12 @@
                    {% block sidebar %} 
                    
                    <h2>Author</h2>
-                   <a  href="#">{{ post.author.getName() }}      </a>
                    
+                   <a  href="{{path('blog_core_author_show', {'slug': post.author.slug})}}" >
+                       
+                        {{ post.author.getName() }}</a>
+                    
+                             
   
                    {% endblock %}
                  </div>

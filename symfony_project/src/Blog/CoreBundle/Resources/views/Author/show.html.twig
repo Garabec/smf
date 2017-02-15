@@ -1,0 +1,50 @@
+{% extends "CoreBundle::layout.html.twig" %}
+
+
+
+{% block content %}
+
+  <div class="row">
+  <div class="col-md-8">
+       
+{% block section %} 
+
+<article>
+    
+    <header>
+        
+         <h1> <a  href="#">{{ author.name }}</a> </h1> 
+        
+    </header>
+    
+                            
+   {% for post in posts %}
+
+        {{ include ('CoreBundle:Post:_post.html.twig', {post: post}) }}
+
+   {% endfor %}
+   
+</article>
+
+{% endblock %}
+
+  </div>
+  
+<div class="col-md-4 bg-success ">
+      
+    {% block sidebar %} 
+                   
+        <h3>Author</h3>
+                   
+    <a  href="#">{{ author.name }}      </a>
+                   
+  
+    {% endblock %}
+    
+</div>
+
+
+</div>
+
+
+{% endblock %}

@@ -10,4 +10,24 @@ namespace Blog\ModelBundle\Repository;
  */
 class AuthorRepository extends \Doctrine\ORM\EntityRepository
 {
+    private function getQueryBuilder(){
+        
+        $rm=$this->getEntityManager();
+      
+             $db=$rm->getRepository('ModelBundle:Author')->createQueryBuilder('a');
+      
+        return $db;  
+        
+    }
+    
+    public function findFirst()
+    {
+      $db=$this->getQueryBuilder()->orderBy('a.id','asc')->setMaxResults(1);
+              
+        return $db->getQuery()->getSingleResult();   
+        
+    } 
+    
+    
+    
 }

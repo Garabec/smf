@@ -22,33 +22,20 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
     
     public function getLatest($num)
     {
-        
-        
-     $db=$this->getQueryBuilder()->orderBy('p.createdAt','desc')->setMaxResults($num);
+        $db=$this->getQueryBuilder()->orderBy('p.createdAt','desc')->setMaxResults($num);
               
-              
-              
-              
-     return $db->getQuery()->getResult();   
-        
+              return $db->getQuery()->getResult();   
         
     }
     
     
     private function getQueryBuilder(){
         
-        
-      $rm=$this->getEntityManager();
+        $rm=$this->getEntityManager();
       
-      dump($rm);
+             $db=$rm->getRepository('ModelBundle:Post')->createQueryBuilder('p');
       
-      
-      $db=$rm->getRepository('ModelBundle:Post')->createQueryBuilder('p');
-      
-                                               
-      
-        
-      return $db;  
+        return $db;  
         
     }
     
@@ -60,15 +47,9 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
      **/
     public function findFirst()
     {
-        
-        
-     $db=$this->getQueryBuilder()->orderBy('p.id','asc')->setMaxResults(1);
+      $db=$this->getQueryBuilder()->orderBy('p.id','asc')->setMaxResults(1);
               
-              
-              
-              
-     return $db->getQuery()->getSingleResult();   
-        
+        return $db->getQuery()->getSingleResult();   
         
     }
     

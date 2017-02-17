@@ -4,6 +4,7 @@ namespace Blog\ModelBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Blog\ModelBundle\Entity\Post;
 
 /**
  * Comment
@@ -11,7 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="comment")
  * @ORM\Entity(repositoryClass="Blog\ModelBundle\Repository\CommentRepository")
  */
-class Comment
+class Comment extends Timestampable
 {
     /**
      * @var int

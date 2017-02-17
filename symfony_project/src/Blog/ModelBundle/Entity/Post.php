@@ -5,6 +5,7 @@ namespace Blog\ModelBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\Common\Collections\ArrayCollection;
 /**
  * Post
  *
@@ -190,7 +191,7 @@ class Post extends Timestampable
      */
     public function __construct()
     {
-        $this->comments = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->comments = new ArrayCollection();
     }
 
     /**
@@ -200,7 +201,7 @@ class Post extends Timestampable
      *
      * @return Post
      */
-    public function addComment(\Blog\ModelBundle\Entity\Comment $comment)
+    public function addComment(Comment $comment)
     {
         $this->comments[] = $comment;
 
@@ -212,7 +213,7 @@ class Post extends Timestampable
      *
      * @param \Blog\ModelBundle\Entity\Comment $comment
      */
-    public function removeComment(\Blog\ModelBundle\Entity\Comment $comment)
+    public function removeComment(Comment $comment)
     {
         $this->comments->removeElement($comment);
     }

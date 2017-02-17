@@ -7,7 +7,7 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Blog\ModelBundle\Entity\Author;
-
+use Faker\Factory as FakerFactory;
 
 class Authors extends AbstractFixture implements OrderedFixtureInterface {
     
@@ -23,15 +23,22 @@ class Authors extends AbstractFixture implements OrderedFixtureInterface {
      **/
      
      public function load(ObjectManager $manager){
+         
+         
+       $faker=FakerFactory::create('ru_RU');  
         
+       
        $a1 = new Author;
-       $a1->setName('Vlad');
+       $faker->seed(1111);
+       $a1->setName($faker->firstName);
        
        $a2 = new Author;
-       $a2->setName('Nikolay');
+       $faker->seed(1112);
+       $a2->setName($faker->firstName);
        
        $a3 = new Author;
-       $a3->setName('Sergei');
+       $faker->seed(1113);
+       $a3->setName($faker->firstName);
         
         
         $manager->persist($a1);

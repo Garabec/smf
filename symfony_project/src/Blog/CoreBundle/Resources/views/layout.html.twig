@@ -8,14 +8,15 @@
 
 {% endblock %}
 
-{% block title %}CoreBundle:Post:index{% endblock %}
+{% block title %}Symfony Blog{% endblock %}
 
 {% block body %}
 
 
 <nav class="navbar navbar-inverse">
+    
 <a href="#"><h1>Symfony 3 Blog</h1></a>
-<button type="button" class="btn btn-primary">Home</button>
+<a href="{{path('blog_core_post_index')}}" ><button type="button" class="btn btn-primary">Home</button></a>
 
 </nav>
 

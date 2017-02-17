@@ -1,0 +1,4 @@
+blog:
+    core:
+        author: Author
+        author_posts: Author posts

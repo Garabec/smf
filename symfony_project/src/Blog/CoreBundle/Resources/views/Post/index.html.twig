@@ -1,51 +1,40 @@
 {% extends "CoreBundle::layout.html.twig" %}
 
-
+{% block title %}
+               Welcome to the Symfony Blog
+{% endblock %}
 
 {% block content %}
 
-<div class="row">
-    
-  <div class="col-md-8">
+      <div class="row">
+          <div class="col-md-8">
+              
+                {% for post in posts %}
+                
+                   {{ include ('CoreBundle:Post:_post.html.twig', {post: post}) }}
+                   
+                {% endfor %}
 
-
-<h3> Welcome to the Post:index page</h3>
-
-
-
-
-
-{% for post in posts %}
-
-
-{{ include ('CoreBundle:Post:_post.html.twig', {post: post}) }}
-
-
-{% endfor %}
-
-</div>
-
-  <div class="col-md-4 bg-success ">
+          </div>
+          
+      <div class="col-md-4 bg-success ">
       
-      
-      
-  {% block sidebar %} 
+{% block sidebar %} 
   
-   <h2>Latest Post</h2>
+  <h3>Latest Post</h3>
      
      {% for post in post_latest %}
      
-     <p><a href="{{post.slug}}">{{post.title}}</a></p>
-     
+          <p><a href="{{post.slug}}">{{post.title}}</a></p>
      
      {% endfor %} 
      
-     {% endblock %}
+ {% endblock %}
       
+      </div>
+
+
    </div>
-
-
-</div>
 
 
 {% endblock %}

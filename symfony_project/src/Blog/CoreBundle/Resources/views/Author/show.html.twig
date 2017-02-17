@@ -13,7 +13,7 @@
     
     <header>
         
-         <h1> <a  href="#">{{ author.name }}</a> </h1> 
+         <h1> {{'blog.core.author_posts' | trans}}: {{ author.name }} </h1> 
         
     </header>
     
@@ -34,7 +34,7 @@
       
     {% block sidebar %} 
                    
-        <h3>Author</h3>
+        <h3>{{'blog.core.author' | trans }} </h3>
                    
     <a  href="#">{{ author.name }}      </a>
                    

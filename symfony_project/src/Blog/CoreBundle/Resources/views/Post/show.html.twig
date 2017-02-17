@@ -1,58 +1,43 @@
 {% extends "CoreBundle::layout.html.twig" %}
 
 
-
 {% block content %}
 
-<div class="row">
-    
-                 <div class="col-md-8">
+       <div class="row">
+           <div class="col-md-8">
+               
+{% block section %} 
                      
-                     {% block section %} 
-                     
-                     <article>
+    <article>
+           <header>
+              <h2><a  href="#">{{post.title}}</a></h2> 
+           </header>
     
-                         <header>
-        
-        
-                            <h2><a  href="#">{{post.title}}</a></h2> 
-        
-        
-                        </header>
-    
-                            <p> <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
-                            
-                            </p>
+            <p> 
+              <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
+            </p>
 
-
-                   <p>
-        
-                           {{ post.body }}   
-        
-                   </p>
-                   </article>
+            <p>
+               {{ post.body }}   
+            </p>
+     </article>
   
-                     {% endblock %}
+{% endblock %}
 
-                 </div>
-
-                 <div class="col-md-4 bg-success ">
-      
-                   {% block sidebar %} 
+            </div>
+    <div class="col-md-4 bg-success ">
+       
+{% block sidebar %} 
                    
-                   <h2>Author</h2>
-                   
-                   <a  href="{{path('blog_core_author_show', {'slug': post.author.slug})}}" >
+    <h3>{{'blog.core.author' | trans }}</h3>
+            <a  href="{{path('blog_core_author_show', {'slug': post.author.slug})}}" >
+            {{ post.author.name() }}</a>
                        
-                        {{ post.author.getName() }}</a>
-                    
-                             
-  
-                   {% endblock %}
-                 </div>
+{% endblock %}
+             </div>
 
 
-</div>
+        </div>
 
 
 {% endblock %}

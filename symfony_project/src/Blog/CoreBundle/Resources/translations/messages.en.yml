@@ -2,3 +2,8 @@ blog:
     core:
         author: Author
         author_posts: Author posts
+        comment:
+               post:
+                   on: Created
+                   by: Author
+                   title: Comments

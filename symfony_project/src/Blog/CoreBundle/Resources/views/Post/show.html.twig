@@ -22,6 +22,23 @@
             </p>
      </article>
   
+  
+<a id="comments"></a>
+<hr>
+<h2>{{"blog.core.comment.post.title" | trans }}:</h2>
+
+<div class="row">
+<div class="col-md-12 bg-warning">
+
+{% for comment in post.comments %}
+
+      {{ include ('CoreBundle:Post:_comment.html.twig', {comment: comment}) }}
+
+{% endfor %}
+
+</div>
+  
+</div>  
 {% endblock %}
 
             </div>

@@ -27,7 +27,8 @@ class Comments extends AbstractFixture implements OrderedFixtureInterface {
         $posts=$manager->getRepository('ModelBundle:Post')->findAll();
         $faker=FakerFactory::create('ru_RU');
         
-        
+   for($i=0;$i<10;$i++) { 
+       
       foreach($posts as $post) {
           
       $comment= new Comment();
@@ -42,6 +43,10 @@ class Comments extends AbstractFixture implements OrderedFixtureInterface {
         
         
         $manager->flush();
+   }   
+       
+        
+        
         
     }
 

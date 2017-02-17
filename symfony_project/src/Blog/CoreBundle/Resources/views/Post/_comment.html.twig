@@ -1,0 +1,19 @@
+<article>
+    <header>
+            <p> 
+    
+            {{"blog.core.comment.post.on" | trans | capitalize  }}:<time datetime="{{ comment.createdAt | date('c') }}" > {{ comment.createdAt | date }} </time> 
+    
+               {{"blog.core.comment.post.by" | trans }}: <a href="#">{{ comment.author}}</a>
+            
+            </p>
+    </header>
+
+    <p class="text-success" >
+        
+        {{ comment.body | nl2br}}   
+        
+    </p>
+    
+</article>
+  

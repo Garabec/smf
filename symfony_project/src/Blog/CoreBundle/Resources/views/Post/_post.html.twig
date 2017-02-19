@@ -10,7 +10,11 @@
     
       <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
     
-            <a href="#">{{ post.author.getName()}}</a>
+            <a href="#">{{ post.author.name}}</a>
+            <a href="{{path('blog_core_post_show',{'slug':post.slug})}}#comments" > 
+            {% set count= post.comments | length %}
+            {{"blog.core.post.comments" | trans_plural(count)}}
+            </a> 
     </p>
 
 

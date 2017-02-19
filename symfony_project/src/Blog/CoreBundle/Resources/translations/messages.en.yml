@@ -2,8 +2,9 @@ blog:
     core:
         author: Author
         author_posts: Author posts
-        comment:
-               post:
+        post:
+            comment:
                    on: Created
                    by: Author
                    title: Comments
+            comments: " {0} Not comments| {1} %count% comment| ]1,Inf] %count% comments"        

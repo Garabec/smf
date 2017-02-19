@@ -428,3 +428,55 @@
 [14-Feb-2017 20:22:36 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4651
 [14-Feb-2017 20:22:36 UTC] PHP   7. Blog\ModelBundle\Repository\PostRepository->getLatest() /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php:22
 [14-Feb-2017 20:22:36 UTC] PHP   8. Blog\ModelBundle\Repository\PostRepository->getQueryBuilder() /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/Repository/PostRepository.php:27
+[18-Feb-2017 15:43:48 UTC] PHP Fatal error:  Call to undefined function Blog\CoreBundle\Controller\dump() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 27
+[18-Feb-2017 15:43:48 UTC] PHP Stack trace:
+[18-Feb-2017 15:43:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app.php:0
+[18-Feb-2017 15:43:48 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_project/web/app.php:16
+[18-Feb-2017 15:43:48 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[18-Feb-2017 15:43:48 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4606
+[18-Feb-2017 15:43:48 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4651}() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4651
+[18-Feb-2017 15:43:48 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/var/cache/prod/classes.php:4651
+[18-Feb-2017 20:56:00 UTC] PHP Fatal error:  Class 'TwigSimpleFilter' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/TwigExtensions/TransPlural.php on line 59
+[18-Feb-2017 20:56:00 UTC] PHP Stack trace:
+[18-Feb-2017 20:56:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[18-Feb-2017 20:56:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[18-Feb-2017 20:56:00 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[18-Feb-2017 20:56:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[18-Feb-2017 20:56:00 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[18-Feb-2017 20:56:00 UTC] PHP   6. Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController->panelAction($request = *uninitialized*, $token = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[18-Feb-2017 20:56:00 UTC] PHP   7. Twig_Environment->render($name = *uninitialized*, $context = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Controller/ProfilerController.php:126
+[18-Feb-2017 20:56:00 UTC] PHP   8. Twig_Environment->loadTemplate($name = *uninitialized*, $index = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5202
+[18-Feb-2017 20:56:00 UTC] PHP   9. Twig_Environment->compileSource($source = *uninitialized*, $name = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5243
+[18-Feb-2017 20:56:00 UTC] PHP  10. Twig_Environment->tokenize($source = *uninitialized*, $name = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5398
+[18-Feb-2017 20:56:00 UTC] PHP  11. Twig_Lexer->__construct($env = *uninitialized*, $options = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5349
+[18-Feb-2017 20:56:00 UTC] PHP  12. Twig_Lexer->getOperatorRegex() /home/ubuntu/workspace/symfony_project/vendor/twig/twig/lib/Twig/Lexer.php:68
+[18-Feb-2017 20:56:00 UTC] PHP  13. Twig_Environment->getUnaryOperators() /home/ubuntu/workspace/symfony_project/vendor/twig/twig/lib/Twig/Lexer.php:382
+[18-Feb-2017 20:56:00 UTC] PHP  14. Twig_Environment->initExtensions() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5738
+[18-Feb-2017 20:56:00 UTC] PHP  15. Twig_Environment->initExtension($extension = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5786
+[18-Feb-2017 20:56:00 UTC] PHP  16. Blog\CoreBundle\TwigExtensions\TransPlural->getFilters() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5793
+[18-Feb-2017 21:06:18 UTC] PHP Fatal error:  Class 'TwigSimpleFilter' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/TwigExtensions/TransPlural.php on line 59
+[18-Feb-2017 21:06:18 UTC] PHP Stack trace:
+[18-Feb-2017 21:06:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[18-Feb-2017 21:06:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[18-Feb-2017 21:06:18 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[18-Feb-2017 21:06:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[18-Feb-2017 21:06:18 UTC] PHP   5. Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch($eventName = *uninitialized*, $event = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4219
+[18-Feb-2017 21:06:18 UTC] PHP   6. Symfony\Component\EventDispatcher\EventDispatcher->dispatch($eventName = *uninitialized*, $event = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php:136
+[18-Feb-2017 21:06:18 UTC] PHP   7. Symfony\Component\EventDispatcher\EventDispatcher->doDispatch($listeners = *uninitialized*, $eventName = *uninitialized*, $event = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:3187
+[18-Feb-2017 21:06:18 UTC] PHP   8. call_user_func:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:3272}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:3272
+[18-Feb-2017 21:06:18 UTC] PHP   9. Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke($event = *uninitialized*, $eventName = *uninitialized*, $dispatcher = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:3272
+[18-Feb-2017 21:06:18 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:106}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:106
+[18-Feb-2017 21:06:18 UTC] PHP  11. Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener->onKernelView($event = *uninitialized*, *uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:106
+[18-Feb-2017 21:06:18 UTC] PHP  12. Symfony\Bundle\TwigBundle\TwigEngine->renderResponse($view = *uninitialized*, $parameters = *uninitialized*, $response = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:9508
+[18-Feb-2017 21:06:18 UTC] PHP  13. Symfony\Bundle\TwigBundle\TwigEngine->render($name = *uninitialized*, $parameters = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:77
+[18-Feb-2017 21:06:18 UTC] PHP  14. Symfony\Bridge\Twig\TwigEngine->render($name = *uninitialized*, $parameters = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:50
+[18-Feb-2017 21:06:18 UTC] PHP  15. Symfony\Bridge\Twig\TwigEngine->load($name = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bridge/Twig/TwigEngine.php:50
+[18-Feb-2017 21:06:18 UTC] PHP  16. Twig_Environment->loadTemplate($name = *uninitialized*, $index = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bridge/Twig/TwigEngine.php:126
+[18-Feb-2017 21:06:18 UTC] PHP  17. Twig_Environment->compileSource($source = *uninitialized*, $name = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5243
+[18-Feb-2017 21:06:18 UTC] PHP  18. Twig_Environment->tokenize($source = *uninitialized*, $name = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5398
+[18-Feb-2017 21:06:18 UTC] PHP  19. Twig_Lexer->__construct($env = *uninitialized*, $options = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5349
+[18-Feb-2017 21:06:18 UTC] PHP  20. Twig_Lexer->getOperatorRegex() /home/ubuntu/workspace/symfony_project/vendor/twig/twig/lib/Twig/Lexer.php:68
+[18-Feb-2017 21:06:18 UTC] PHP  21. Twig_Environment->getUnaryOperators() /home/ubuntu/workspace/symfony_project/vendor/twig/twig/lib/Twig/Lexer.php:382
+[18-Feb-2017 21:06:18 UTC] PHP  22. Twig_Environment->initExtensions() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5738
+[18-Feb-2017 21:06:18 UTC] PHP  23. Twig_Environment->initExtension($extension = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5786
+[18-Feb-2017 21:06:18 UTC] PHP  24. Blog\CoreBundle\TwigExtensions\TransPlural->getFilters() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5793

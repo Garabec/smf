@@ -1,9 +1,23 @@
 # Learn more about services, parameters and containers at
 # http://symfony.com/doc/current/service_container.html
-parameters:
-#    parameter_name: value
+#   parameters:
+#       translator_arg: translator
+
+# services:
+#     service_name:
+#         class: AppBundle\Directory\ClassName
+#         arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+# services:
+#         service_name: blog.twig.plural_extension
+#                     class: Blog\CoreBundle\TwigExtensions\TransPlural
+#                     arguments: [@translator]
+#                     tags:
+#                     - { name: twig.extension }
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    blog.twig.plural_extension:
+        class: Blog\CoreBundle\TwigExtensions\TransPlural
+        public: false
+        arguments: ["@translator"]
+        tags:
+            - { name: twig.extension }

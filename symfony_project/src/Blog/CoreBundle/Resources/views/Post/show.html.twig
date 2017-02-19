@@ -14,7 +14,8 @@
            </header>
     
             <p> 
-              <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time> 
+              <time datetime="{{ post.createdAt | date('c') }}" > {{ post.createdAt | date }} </time>
+              {{'blog.core.author' | trans }}: {{ post.author.name }}
             </p>
 
             <p>
@@ -25,7 +26,7 @@
   
 <a id="comments"></a>
 <hr>
-<h2>{{"blog.core.comment.post.title" | trans }}:</h2>
+<h2>{{"blog.core.post.comment.title" | trans }}:</h2>
 
 <div class="row">
 <div class="col-md-12 bg-warning">
@@ -48,7 +49,7 @@
                    
     <h3>{{'blog.core.author' | trans }}</h3>
             <a  href="{{path('blog_core_author_show', {'slug': post.author.slug})}}" >
-            {{ post.author.name() }}</a>
+            {{ post.author.name }}</a>
                        
 {% endblock %}
              </div>

@@ -23,7 +23,7 @@ class PostControllerTest extends WebTestCase
         
         $this->assertTrue($client->getResponse()->isSuccessful(),"The response not susseful");
         
-        $this->assertCount(4,$crawler->filter('h2'),"There are should be 3 displayed ports");
+        $this->assertCount(3,$crawler->filter('h2'),"There are should be 3 displayed ports");
         
     }
 

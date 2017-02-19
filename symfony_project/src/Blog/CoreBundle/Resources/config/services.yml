@@ -1,4 +1,7 @@
 services:
-#    core.example:
-#        class: Blog\CoreBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+     blog.twig.plural.extension:
+        class: Blog\CoreBundle\TwigExtensions\TransPlural
+        arguments: [translator]
+        tags:
+            - { name: twig.extension }
+

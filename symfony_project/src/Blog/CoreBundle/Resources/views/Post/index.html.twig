@@ -4,22 +4,22 @@
                Welcome to the Symfony Blog
 {% endblock %}
 
-{% block content %}
 
 
-      <div class="row">
-          
-          <div class="col-md-8">
+
+      
               
+{% block section %} 
+
                 {% for post in posts %}
                 
                    {{ include ('CoreBundle:Post:_post.html.twig', {post: post}) }}
                    
                 {% endfor %}
+                
+{% endblock %}
 
-          </div>
           
-      <div class="col-md-4 bg-success ">
       
 {% block sidebar %} 
   
@@ -33,11 +33,8 @@
      
  {% endblock %}
       
-      </div>
+     
 
 
-   </div>
 
-
-{% endblock %}
 

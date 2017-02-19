@@ -480,3 +480,59 @@
 [18-Feb-2017 21:06:18 UTC] PHP  22. Twig_Environment->initExtensions() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5738
 [18-Feb-2017 21:06:18 UTC] PHP  23. Twig_Environment->initExtension($extension = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5786
 [18-Feb-2017 21:06:18 UTC] PHP  24. Blog\CoreBundle\TwigExtensions\TransPlural->getFilters() /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:5793
+[19-Feb-2017 11:33:55 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Controller\CommentType' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 63
+[19-Feb-2017 11:33:55 UTC] PHP Stack trace:
+[19-Feb-2017 11:33:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 11:33:55 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 11:33:55 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 11:33:55 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 11:33:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:33:55 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:37:00 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Controller\CommentType' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 63
+[19-Feb-2017 11:37:00 UTC] PHP Stack trace:
+[19-Feb-2017 11:37:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 11:37:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 11:37:00 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 11:37:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 11:37:00 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:37:00 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:37:25 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Controller\CommentType' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 63
+[19-Feb-2017 11:37:25 UTC] PHP Stack trace:
+[19-Feb-2017 11:37:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 11:37:25 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 11:37:25 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 11:37:25 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 11:37:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:37:25 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:38:12 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Controller\CommentType' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 63
+[19-Feb-2017 11:38:12 UTC] PHP Stack trace:
+[19-Feb-2017 11:38:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 11:38:12 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 11:38:12 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 11:38:12 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 11:38:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 11:38:12 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:02:18 UTC] PHP Fatal error:  Class 'Blog\AdminBundle\Controller\rtt' not found in /home/ubuntu/workspace/symfony_project/src/Blog/AdminBundle/Controller/SecurityController.php on line 22
+[19-Feb-2017 18:02:18 UTC] PHP Stack trace:
+[19-Feb-2017 18:02:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 18:02:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 18:02:18 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 18:02:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 18:02:18 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:02:18 UTC] PHP   6. Blog\AdminBundle\Controller\SecurityController->loginAction($request = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:02:39 UTC] PHP Fatal error:  Class 'Symfony\Component\Security\Core\SecurityContextInterface' not found in /home/ubuntu/workspace/symfony_project/src/Blog/AdminBundle/Controller/SecurityController.php on line 26
+[19-Feb-2017 18:02:39 UTC] PHP Stack trace:
+[19-Feb-2017 18:02:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 18:02:39 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 18:02:39 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 18:02:39 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 18:02:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:02:39 UTC] PHP   6. Blog\AdminBundle\Controller\SecurityController->loginAction($request = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:22:43 UTC] PHP Fatal error:  Class 'Symfony\Component\Security\Core\SecurityContextInterface' not found in /home/ubuntu/workspace/symfony_project/src/Blog/AdminBundle/Controller/SecurityController.php on line 26
+[19-Feb-2017 18:22:43 UTC] PHP Stack trace:
+[19-Feb-2017 18:22:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[19-Feb-2017 18:22:43 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[19-Feb-2017 18:22:43 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[19-Feb-2017 18:22:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[19-Feb-2017 18:22:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[19-Feb-2017 18:22:43 UTC] PHP   6. Blog\AdminBundle\Controller\SecurityController->loginAction($request = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216

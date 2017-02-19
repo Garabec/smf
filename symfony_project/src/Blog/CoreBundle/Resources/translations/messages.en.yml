@@ -4,6 +4,10 @@ blog:
         author_posts: Author posts
         post:
             comment:
+                   name: Author name
+                   body: Your message
+                   send: Send
+                   write: Please write your comment 
                    on: Created
                    by: Author
                    title: Comments

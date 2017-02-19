@@ -1,10 +1,7 @@
 {% extends "CoreBundle::layout.html.twig" %}
 
 
-{% block content %}
 
-       <div class="row">
-           <div class="col-md-8">
                
 {% block section %} 
                      
@@ -24,27 +21,44 @@
      </article>
   
   
-<a id="comments"></a>
-<hr>
-<h2>{{"blog.core.post.comment.title" | trans }}:</h2>
+    <a id="comments"></a>
+    
+     <hr>
+     
+    <h2>{{"blog.core.post.comment.title" | trans }}:</h2>
 
-<div class="row">
-<div class="col-md-12 bg-warning">
+
 
 {% for comment in post.comments %}
 
       {{ include ('CoreBundle:Post:_comment.html.twig', {comment: comment}) }}
 
 {% endfor %}
-
-</div>
+    
   
-</div>  
+
+<br>
+
+{% block form %}
+    
+    <div class="col-md-6 bg-success ">     
+
+      <h3>{{"blog.core.post.comment.write" | trans}}:</h3>
+  
+      {% form_theme form 'bootstrap_3_layout.html.twig' %}
+      
+      {{ form(form, {action: path('blog_core_post_createcomment', {'slug': post.slug}) ~ '#comments'})}}
+      
+    </div>  
+
+{% endblock %} 
+
+
+
+  
 {% endblock %}
 
-            </div>
-    <div class="col-md-4 bg-success ">
-       
+           
 {% block sidebar %} 
                    
     <h3>{{'blog.core.author' | trans }}</h3>
@@ -52,10 +66,6 @@
             {{ post.author.name }}</a>
                        
 {% endblock %}
-             </div>
+             
 
 
-        </div>
-
-
-{% endblock %}

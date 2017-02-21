@@ -15,9 +15,11 @@
 
 <nav class="navbar navbar-inverse">
     
-<a href="#"><h1>Symfony 3 Blog</h1></a>
+<a href="#"><h1>Admin  Blog</h1></a>
 <a href="{{path('blog_core_post_index')}}" ><button type="button" class="btn btn-primary">Home</button></a>
 
+<a href="{{ path('blog_admin_post_index') }}" ><button type="button" class="btn btn-primary">Post list</button></a>
+<a href="{{ path('blog_admin_author_index') }}" ><button type="button" class="btn btn-primary">Author list</button></a>
 </nav>
 
 <div class="container">

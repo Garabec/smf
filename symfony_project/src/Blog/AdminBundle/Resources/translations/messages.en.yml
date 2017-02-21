@@ -1,0 +1,5 @@
+blog:
+    admin:
+        security:
+                title: Admin panel
+                name: Administration panel

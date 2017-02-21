@@ -1,0 +1,43 @@
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <h1>Authors list</h1>
+    <ul>
+        <li>
+            <a href="{{ path('blog_admin_author_new') }}"><button type="button" class="btn btn-success">Create a new author</button></a>
+        </li>
+    </ul>
+    <table class="table table-striped" >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Slug</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for author in authors %}
+            <tr>
+                <td><a href="{{ path('blog_admin_author_show', { 'id': author.id }) }}">{{ author.id }}</a></td>
+                <td>{{ author.name }}</td>
+                <td>{{ author.slug }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('blog_admin_author_show', { 'id': author.id }) }}"><button type="button" class="btn btn-warning">Show</button></a>
+                        </li>
+                        <br>
+                         <li>
+                            <a href="{{ path('blog_admin_author_edit', { 'id': author.id }) }}"><button type="button" class="btn btn-info">Edit</button></a>
+                        </li>
+                    
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    
+    
+{% endblock %}

@@ -1,3 +1,13 @@
+admin_author:
+    resource: "@AdminBundle/Controller/AuthorController.php"
+    type:     annotation
+
+admin_post:
+    resource: "@AdminBundle/Controller/PostController.php"
+    type:     annotation
+
+
+
 admin:
     resource: "@AdminBundle/Controller/"
     type:     annotation

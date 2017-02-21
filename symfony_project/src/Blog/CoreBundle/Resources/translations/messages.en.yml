@@ -11,4 +11,8 @@ blog:
                    on: Created
                    by: Author
                    title: Comments
-            comments: " {0} Not comments| {1} %count% comment| ]1,Inf] %count% comments"        
+            comments: " {0} Not comments| {1} %count% comment| ]1,Inf] %count% comments"
+    admin:
+        security:
+                title: Admin panel
+                name: Administration panel        

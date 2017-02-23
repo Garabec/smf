@@ -84,22 +84,6 @@ class PostController extends Controller
         $form=$this->getPostManager()->createForm($post,$request); 
         
         
-        // $comment=new Comment();
-        
-        // $comment->setPost($post);
-        
-        // $form=$this->createForm(CommentType::class,$comment);
-        // $form->handleRequest($request);
-        
-        // if($form->isValid()){
-         
-        //  $om=$this->getDoctrine()->getManager();
-        //  $om->persist($comment);
-        //  $om->flush();
-         
-         
-         
-         
          if(true===$form){
          $this->get('session')->getFlashBag()->add('success','This comment was submitted successfully');
          

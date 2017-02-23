@@ -3,6 +3,11 @@
 namespace Blog\CoreBundle\Services;
 
 use Doctrine\ORM\EntityManager;
+use Blog\ModelBundle\Form\CommentType;
+use Symfony\Component\HttpFoundation\Request;
+use Blog\ModelBundle\Entity\Comment;
+use Blog\ModelBundle\Entity\Post;
+use Symfony\Component\Form\FormFactory;
 /**
  * 
  * class PostManager
@@ -19,9 +24,10 @@ class PostManager {
      * @param EntityManager $em
      * 
      **/ 
-    public function __construct(EntityManager $em){
+    public function __construct(EntityManager $em, FormFactory $form_factory){
         
         $this->em=$em;
+        $this->formFactory=$form_factory;
         
     }
     
@@ -78,7 +84,36 @@ class PostManager {
         
     }
        
-    
+    /**
+     * @param Post $post
+     * @param Request $request
+     * 
+     * return bool/FormInterface
+     * 
+     **/
+     
+    public function createForm(Post $post,Request $request){
+        
+      $comment=new Comment();
+        
+        $comment->setPost($post);
+        
+        $form=$this->formFactory->create(CommentType::class,$comment);
+        
+        $form->handleRequest($request);
+        
+        if($form->isValid()){
+         
+         
+         $this->em->persist($comment);
+         $this->em->flush();
+         
+         return true;
+        }
+        
+        return $form;
+        
+    }
     
     
 }

@@ -22,7 +22,9 @@ services:
     
     post_manager:
         class: Blog\CoreBundle\Services\PostManager
-        arguments: ["@doctrine.orm.entity_manager"]
+        arguments: 
+                 - "@doctrine.orm.entity_manager"
+                 - "@form.factory"
 
     blog.twig.plural_extension:
         class: Blog\CoreBundle\TwigExtensions\TransPlural

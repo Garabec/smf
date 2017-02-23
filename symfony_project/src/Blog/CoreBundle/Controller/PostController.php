@@ -79,27 +79,28 @@ class PostController extends Controller
     
     public function createCommentAction(Request $request,$slug){
         
-        $post=$this->getDoctrine()->getRepository('ModelBundle:Post')->findOneBy(['slug'=>$slug]);
+        $post=$this->getPostManager()->findBySlug($slug);
         
-         if(null===$post){
-            
-           throw $this->createNotFoundException("Post was not found"); 
-        };
+        $form=$this->getPostManager()->createForm($post,$request); 
         
         
-        $comment=new Comment();
+        // $comment=new Comment();
         
-        $comment->setPost($post);
+        // $comment->setPost($post);
         
-        $form=$this->createForm(CommentType::class,$comment);
-        $form->handleRequest($request);
+        // $form=$this->createForm(CommentType::class,$comment);
+        // $form->handleRequest($request);
         
-        if($form->isValid()){
+        // if($form->isValid()){
          
-         $om=$this->getDoctrine()->getManager();
-         $om->persist($comment);
-         $om->flush();
+        //  $om=$this->getDoctrine()->getManager();
+        //  $om->persist($comment);
+        //  $om->flush();
          
+         
+         
+         
+         if(true===$form){
          $this->get('session')->getFlashBag()->add('success','This comment was submitted successfully');
          
           return $this->redirect($this->generateUrl('blog_core_post_show', ['slug'=>$post->getSlug()])) ; 

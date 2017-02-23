@@ -20,15 +20,10 @@ class PostController extends Controller
      * @return array()
      */
     public function indexAction()
-    
-    
     {
+        $posts=$this->getPostManager()->findAll();
         
-        
-        
-        $posts=$this->getDoctrine()->getRepository('ModelBundle:Post')->findAll();
-        
-        $post_latest=$this->getDoctrine()->getRepository('ModelBundle:Post')->getLatest(3);
+        $post_latest=$this->getPostManager()->getLatestPosts(3);
         
         return  array(
             
@@ -39,30 +34,22 @@ class PostController extends Controller
             );
         
     }
-
-
-    /**
+     /**
      * 
      * Show a post
      * 
      * @param string $slug
      * 
      * @Route("/{slug}")
-     * 
      * @Template()
      * @throws NotFoundHttpException
      * @return array()
-     */
+     **/
+     
     public function showAction($slug)
-    {
+    {    
         
-        $post=$this->getDoctrine()->getRepository('ModelBundle:Post')->findOneBy(['slug'=>$slug]);
-        
-        if(null===$post){
-            
-           throw $this->createNotFoundException("Post was not found"); 
-        }
-        
+        $post=$this->getPostManager()->findBySlug($slug);
         
         $form=$this->createForm(CommentType::class);
         
@@ -130,6 +117,11 @@ class PostController extends Controller
         
     }
 
-
+    private function  getPostManager(){
+        
+     return $this->get('post_manager');   
+        
+        
+    }
 
 }

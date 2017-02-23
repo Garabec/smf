@@ -2,6 +2,8 @@
 
 namespace Blog\CoreBundle\Services;
 
+use Doctrine\ORM\EntityManager;
+use Blog\ModelBundle\Entity\Author;
 
 /**
  * 
@@ -34,7 +36,7 @@ class AuthorManager {
      
     public function findBySlug($slug){
         
-     $author=$this->em->getDoctrine()->getRepository('ModelBundle:Author')->findOneBy(
+     $author=$this->em->getRepository('ModelBundle:Author')->findOneBy(
          ['slug'=>$slug]);
          
      if(null===$author){
@@ -56,7 +58,7 @@ class AuthorManager {
      
     public function findPosts(Author $author){
         
-      $posts=$this->em->getDoctrine()->getRepository('ModelBundle:Author')->findBy($author);  
+      $posts=$this->em->getRepository('ModelBundle:Post')->findBy(['author'=>$author]);  
         
       return $posts;  
         

@@ -576,3 +576,39 @@
 [22-Feb-2017 13:42:08 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
 [22-Feb-2017 13:42:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
 [22-Feb-2017 13:42:08 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:49:19 UTC] PHP Fatal error:  Call to undefined method DoctrineORMEntityManager_000000003c12c2860000000025caa4dbb73f48d9079634abf189d7d6feec6adb::getDoctrine() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Services/AuthorManager.php on line 39
+[23-Feb-2017 09:49:19 UTC] PHP Stack trace:
+[23-Feb-2017 09:49:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[23-Feb-2017 09:49:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[23-Feb-2017 09:49:19 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[23-Feb-2017 09:49:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[23-Feb-2017 09:49:19 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:49:19 UTC] PHP   6. Blog\CoreBundle\Controller\AuthorController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:49:19 UTC] PHP   7. Blog\CoreBundle\Services\AuthorManager->findBySlug($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/AuthorController.php:28
+[23-Feb-2017 09:50:59 UTC] PHP Fatal error:  Call to undefined method DoctrineORMEntityManager_000000003c12c2860000000025caa4dbb73f48d9079634abf189d7d6feec6adb::getDoctrine() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Services/AuthorManager.php on line 39
+[23-Feb-2017 09:50:59 UTC] PHP Stack trace:
+[23-Feb-2017 09:50:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[23-Feb-2017 09:50:59 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[23-Feb-2017 09:50:59 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[23-Feb-2017 09:50:59 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[23-Feb-2017 09:50:59 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:50:59 UTC] PHP   6. Blog\CoreBundle\Controller\AuthorController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:50:59 UTC] PHP   7. Blog\CoreBundle\Services\AuthorManager->findBySlug($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/AuthorController.php:28
+[23-Feb-2017 09:51:36 UTC] PHP Fatal error:  Call to undefined method DoctrineORMEntityManager_000000003c12c2860000000025caa4dbb73f48d9079634abf189d7d6feec6adb::getDoctrine() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Services/AuthorManager.php on line 39
+[23-Feb-2017 09:51:36 UTC] PHP Stack trace:
+[23-Feb-2017 09:51:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[23-Feb-2017 09:51:36 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[23-Feb-2017 09:51:36 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[23-Feb-2017 09:51:36 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[23-Feb-2017 09:51:36 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:51:36 UTC] PHP   6. Blog\CoreBundle\Controller\AuthorController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:51:36 UTC] PHP   7. Blog\CoreBundle\Services\AuthorManager->findBySlug($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/AuthorController.php:28
+[23-Feb-2017 09:58:52 UTC] PHP Fatal error:  Call to undefined method DoctrineORMEntityManager_000000003c12c2860000000025caa4dbb73f48d9079634abf189d7d6feec6adb::getDoctrine() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Services/AuthorManager.php on line 39
+[23-Feb-2017 09:58:52 UTC] PHP Stack trace:
+[23-Feb-2017 09:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[23-Feb-2017 09:58:52 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[23-Feb-2017 09:58:52 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[23-Feb-2017 09:58:52 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[23-Feb-2017 09:58:52 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:58:52 UTC] PHP   6. Blog\CoreBundle\Controller\AuthorController->showAction($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[23-Feb-2017 09:58:52 UTC] PHP   7. Blog\CoreBundle\Services\AuthorManager->findBySlug($slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/AuthorController.php:28

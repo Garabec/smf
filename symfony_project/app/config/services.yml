@@ -19,7 +19,10 @@ services:
     author_manager:
         class: Blog\CoreBundle\Services\AuthorManager
         arguments: ["@doctrine.orm.entity_manager"]
-
+    
+    post_manager:
+        class: Blog\CoreBundle\Services\PostManager
+        arguments: ["@doctrine.orm.entity_manager"]
 
     blog.twig.plural_extension:
         class: Blog\CoreBundle\TwigExtensions\TransPlural

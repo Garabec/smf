@@ -10,7 +10,13 @@ class PostControllerTest extends WebTestCase
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
-        $client = static::createClient();
+        $client = static::createClient(
+            [],[
+                'PHP_AUTH_USER' => 'admin',
+                'PHP_AUTH_PW' => 'adminpass',
+               ] 
+            
+            );
 
         // Create a new entry in the database
         $crawler = $client->request('GET', '/admin/post/');

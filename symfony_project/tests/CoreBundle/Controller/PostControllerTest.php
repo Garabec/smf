@@ -66,6 +66,8 @@ class PostControllerTest extends WebTestCase
             'blog.modelbundle.comment[author]'=> 'Some name',
             'blog.modelbundle.comment[body]'=> 'Some comment body'
             
+            
+            
             ]);
         
         $client->submit($form);

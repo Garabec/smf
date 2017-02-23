@@ -1,3 +1,7 @@
+
+export PATH=~/.composer/vendor/bin:$PATH
+
+
 {% for post in posts %}
 
 

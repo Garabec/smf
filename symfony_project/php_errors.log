@@ -536,3 +536,43 @@
 [19-Feb-2017 18:22:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
 [19-Feb-2017 18:22:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
 [19-Feb-2017 18:22:43 UTC] PHP   6. Blog\AdminBundle\Controller\SecurityController->loginAction($request = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:33:47 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Controller\Comment' not found in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 101
+[22-Feb-2017 13:33:47 UTC] PHP Stack trace:
+[22-Feb-2017 13:33:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[22-Feb-2017 13:33:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[22-Feb-2017 13:33:47 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[22-Feb-2017 13:33:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[22-Feb-2017 13:33:47 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:33:47 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:39:35 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\HttpFoundation\Session\Session::getFlashBug() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 116
+[22-Feb-2017 13:39:35 UTC] PHP Stack trace:
+[22-Feb-2017 13:39:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[22-Feb-2017 13:39:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[22-Feb-2017 13:39:35 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[22-Feb-2017 13:39:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[22-Feb-2017 13:39:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:39:35 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:41:07 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\HttpFoundation\Session\Session::getFlashBug() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 116
+[22-Feb-2017 13:41:07 UTC] PHP Stack trace:
+[22-Feb-2017 13:41:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[22-Feb-2017 13:41:07 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[22-Feb-2017 13:41:07 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[22-Feb-2017 13:41:07 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[22-Feb-2017 13:41:07 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:41:07 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:41:18 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\HttpFoundation\Session\Session::getFlashBug() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 116
+[22-Feb-2017 13:41:18 UTC] PHP Stack trace:
+[22-Feb-2017 13:41:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[22-Feb-2017 13:41:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[22-Feb-2017 13:41:18 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[22-Feb-2017 13:41:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[22-Feb-2017 13:41:18 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:41:18 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:42:08 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\HttpFoundation\Session\Session::getFlashBug() in /home/ubuntu/workspace/symfony_project/src/Blog/CoreBundle/Controller/PostController.php on line 116
+[22-Feb-2017 13:42:08 UTC] PHP Stack trace:
+[22-Feb-2017 13:42:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/web/app_dev.php:0
+[22-Feb-2017 13:42:08 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/web/app_dev.php:28
+[22-Feb-2017 13:42:08 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle($request = *uninitialized*, $type = *uninitialized*, $catch = *uninitialized*) /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[22-Feb-2017 13:42:08 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw($request = *uninitialized*, $type = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4171
+[22-Feb-2017 13:42:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216}(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216
+[22-Feb-2017 13:42:08 UTC] PHP   6. Blog\CoreBundle\Controller\PostController->createCommentAction($request = *uninitialized*, $slug = *uninitialized*) /home/ubuntu/workspace/symfony_project/var/cache/dev/classes.php:4216

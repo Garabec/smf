@@ -266,3 +266,33 @@
 [12-Feb-2017 21:12:26 UTC] PHP  18. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:68
 [12-Feb-2017 21:12:26 UTC] PHP  19. call_user_func_array:{/home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153}() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153
 [12-Feb-2017 21:12:26 UTC] PHP  20. Blog\CoreBundle\Controller\PostController->indexAction() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:153
+[17-Feb-2017 11:20:12 UTC] PHP Fatal error:  Call to undefined method Blog\ModelBundle\Entity\Comment::setAuthorName() in /home/ubuntu/workspace/symfony_project/src/Blog/ModelBundle/DataFixtures/ORM/20-Comments.php on line 34
+[17-Feb-2017 11:20:12 UTC] PHP Stack trace:
+[17-Feb-2017 11:20:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_project/bin/console:0
+[17-Feb-2017 11:20:12 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/symfony_project/bin/console:28
+[17-Feb-2017 11:20:12 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:120
+[17-Feb-2017 11:20:12 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:80
+[17-Feb-2017 11:20:12 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:189
+[17-Feb-2017 11:20:12 UTC] PHP   6. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:848
+[17-Feb-2017 11:20:12 UTC] PHP   7. Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand->execute() /home/ubuntu/workspace/symfony_project/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:262
+[17-Feb-2017 11:20:12 UTC] PHP   8. Doctrine\Common\DataFixtures\Executor\ORMExecutor->execute() /home/ubuntu/workspace/symfony_project/vendor/doctrine/doctrine-fixtures-bundle/Command/LoadDataFixturesDoctrineCommand.php:118
+[17-Feb-2017 11:20:12 UTC] PHP   9. DoctrineORMEntityManager_000000002295ed0d000000002743caf7b73f48d9079634abf189d7d6feec6adb->transactional() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:85
+[17-Feb-2017 11:20:12 UTC] PHP  10. Doctrine\ORM\EntityManager->transactional() /home/ubuntu/workspace/symfony_project/var/cache/dev/appDevDebugProjectContainer.php:4495
+[17-Feb-2017 11:20:12 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[17-Feb-2017 11:20:12 UTC] PHP  12. Doctrine\Common\DataFixtures\Executor\ORMExecutor->Doctrine\Common\DataFixtures\Executor\{closure}() /home/ubuntu/workspace/symfony_project/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:233
+[17-Feb-2017 11:20:12 UTC] PHP  13. Doctrine\Common\DataFixtures\Executor\AbstractExecutor->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/ORMExecutor.php:83
+[17-Feb-2017 11:20:12 UTC] PHP  14. Blog\ModelBundle\DataFixtures\ORM\Comments->load() /home/ubuntu/workspace/symfony_project/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/Executor/AbstractExecutor.php:121
+[18-Feb-2017 14:35:49 UTC] PHP Fatal error:  Class 'Blog\CoreBundle\Tests\Controller\TransPlural' not found in /home/ubuntu/workspace/symfony_project/tests/CoreBundle/TwigExtensions/RussianPluralExtensionTest.php on line 32
+[18-Feb-2017 14:35:49 UTC] PHP Stack trace:
+[18-Feb-2017 14:35:49 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/phpunit/phpunit/phpunit:0
+[18-Feb-2017 14:35:49 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/.composer/vendor/phpunit/phpunit/phpunit:52
+[18-Feb-2017 14:35:49 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+[18-Feb-2017 14:35:49 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:149
+[18-Feb-2017 14:35:49 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:440
+[18-Feb-2017 14:35:49 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php:722
+[18-Feb-2017 14:35:49 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php:722
+[18-Feb-2017 14:35:49 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:724
+[18-Feb-2017 14:35:49 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestResult.php:612
+[18-Feb-2017 14:35:49 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:768
+[18-Feb-2017 14:35:49 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:909
+[18-Feb-2017 14:35:49 UTC] PHP  12. Blog\CoreBundle\Tests\Controller\RussianPluralExtensionTest->testExtension() /home/ubuntu/workspace/symfony_project/vendor/phpunit/phpunit/src/Framework/TestCase.php:909

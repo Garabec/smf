@@ -7,6 +7,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Blog\ModelBundle\Form\CommentType;
+use Symfony\Component\HttpFoundation\Request;
+use Blog\ModelBundle\Entity\Comment;
+
 //use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class PostController extends Controller
@@ -89,7 +92,41 @@ class PostController extends Controller
     
     public function createCommentAction(Request $request,$slug){
         
-        return [];
+        $post=$this->getDoctrine()->getRepository('ModelBundle:Post')->findOneBy(['slug'=>$slug]);
+        
+         if(null===$post){
+            
+           throw $this->createNotFoundException("Post was not found"); 
+        };
+        
+        
+        $comment=new Comment();
+        
+        $comment->setPost($post);
+        
+        $form=$this->createForm(CommentType::class,$comment);
+        $form->handleRequest($request);
+        
+        if($form->isValid()){
+         
+         $om=$this->getDoctrine()->getManager();
+         $om->persist($comment);
+         $om->flush();
+         
+         $this->get('session')->getFlashBag()->add('success','This comment was submitted successfully');
+         
+          return $this->redirect($this->generateUrl('blog_core_post_show', ['slug'=>$post->getSlug()])) ; 
+            
+        }
+        
+        
+        
+        return array (
+            
+                   'post' => $post,
+                   'form' => $form
+            
+            );
         
     }
 

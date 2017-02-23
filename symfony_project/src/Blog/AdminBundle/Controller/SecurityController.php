@@ -45,4 +45,14 @@ class SecurityController extends Controller
         return  array();
     }
 
+    /**
+     * @Route("/logout")
+     * 
+     * @return array
+     */
+    public function logoutAction()
+    {
+         return $this->redirectToRoute('blog_core_post_index');
+    }
+
 }

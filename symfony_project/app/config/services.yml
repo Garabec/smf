@@ -15,6 +15,12 @@
 #                     - { name: twig.extension }
 
 services:
+
+    author_manager:
+        class: Blog\CoreBundle\Services\AuthorManager
+        arguments: ["@doctrine.orm.entity_manager"]
+
+
     blog.twig.plural_extension:
         class: Blog\CoreBundle\TwigExtensions\TransPlural
         public: false

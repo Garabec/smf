@@ -20,6 +20,9 @@
 
 <a href="{{ path('blog_admin_post_index') }}" ><button type="button" class="btn btn-primary">Post list</button></a>
 <a href="{{ path('blog_admin_author_index') }}" ><button type="button" class="btn btn-primary">Author list</button></a>
+{% if app.user %}
+<a href="{{ path('blog_admin_security_logout') }}" ><button type="button" class="btn btn-primary">logout</button></a>
+{% endif %}
 </nav>
 
 <div class="container">

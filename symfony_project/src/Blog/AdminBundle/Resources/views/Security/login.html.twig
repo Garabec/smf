@@ -1,4 +1,4 @@
-{% extends "AdminBundle::layout.html.twig" %}
+{% extends "CoreBundle::layout.html.twig" %}
 
 {% block title %}{{ "blog.admin.security.title" | trans }}{% endblock %}
 
@@ -16,7 +16,7 @@
  <hr>     
       
   
- <form action="{{ path('blog_admin_security_logincheck') }}" method="post">
+ <form action="{{ path('blog_admin_security_login') }}" method="post">
     <div class="form-group">
     <label for="username">Username:</label>
     <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" /> <br>

@@ -21,7 +21,13 @@ class AuthorControllerTest extends WebTestCase
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
-        $client = static::createClient();
+        $client = static::createClient(
+            [],[
+                'PHP_AUTH_USER' => 'admin',
+                'PHP_AUTH_PW' => 'adminpass',
+               ] 
+                
+            );
 
         // Create a new entry in the database
         $crawler = $client->request('GET', '/admin/author/');
@@ -41,9 +47,14 @@ class AuthorControllerTest extends WebTestCase
         $this->assertGreaterThan(0, $crawler->filter('td:contains("Test")')->count(), 'Missing element td:contains("Test")');
 
         // Edit the entity
-        $crawler = $client->click($crawler->selectLink('Edit')->link());
+        //$crawler = $client->click($crawler->selectLink('Edit')->link());
+        
+        
 
-        $form = $crawler->selectButton('Update')->form(array(
+        
+        $crawler = $client->click($crawler->selectLink("Edit")->link());
+
+        $form = $crawler->selectButton('Edit')->form(array(
             'blog_modelbundle_author[name]'  => 'Foo',
             // ... other fields to fill
         ));
